@@ -180,45 +180,9 @@ input {
   flex-wrap: wrap;
 }
 
-.button-eco {
-  display: flex;
-  align-items: center;
-  height: 35px;
-  background-color: white;
-  border: 2px solid var(--grey-color);
-  border-radius: 50px;
-  padding-right: 20px;
-  margin-left: 30px;
-  font-weight: bold;
-  font-size: 10px;
-  cursor: pointer;
-}
-.button-family {
-  display: flex;
-  align-items: center;
-  height: 35px;
-  background-color: white;
-  border: 2px solid var(--grey-color);
-  border-radius: 50px;
-  padding-right: 20px;
-  margin-left: 30px;
-  font-weight: bold;
-  font-size: 10px;
-  cursor: pointer;
-}
-.button-love {
-  display: flex;
-  align-items: center;
-  height: 35px;
-  background-color: white;
-  border: 2px solid var(--grey-color);
-  border-radius: 50px;
-  padding-right: 20px;
-  margin-left: 30px;
-  font-weight: bold;
-  font-size: 10px;
-  cursor: pointer;
-}
+.button-eco,
+.button-family,
+.button-love,
 .button-pets {
   display: flex;
   align-items: center;
@@ -274,10 +238,10 @@ input {
 }
 
 .info-icone {
-  width: 30px;
+  width: 45px;
   height: 30px;
   border: 2px solid var(--grey-color);
-  border-radius: 15px;
+  border-radius: 50%;
   align-items: center;
   justify-content: center;
   margin-right: 15px;

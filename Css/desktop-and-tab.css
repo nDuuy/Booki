@@ -15,6 +15,7 @@
   html {
     overflow: auto;
   }
+  /* hebergements-et-populaires */
 
   .hebergements-et-populaires {
     flex-wrap: wrap-reverse;
@@ -45,6 +46,8 @@
     width: 100%;
   }
 
+  /* activity  */
+
   .activity-card {
     display: flex;
     flex-direction: row;
@@ -57,6 +60,8 @@
     /* otptin3 display: grid: justify-content: none; overflow: scrol ; */
   }
 
+  /* footer  */
+
   .footer-columns {
     margin-left: 50px;
   }
@@ -67,6 +72,23 @@
     width: 100%;
     margin: auto;
   }
+
+  h1,
+  h3 {
+    font-size: 23px;
+  }
+
+  h4 {
+    font-size: 20px;
+    margin: 10px 0px 0px 8px;
+  }
+
+  p {
+    font-size: 17px;
+    font-weight: normal;
+  }
+
+  /* header */
 
   header {
     display: flex;
@@ -101,25 +123,24 @@
     border-bottom: 2px solid var(--blue-color);
   }
 
-  h1,
-  h3 {
-    font-size: 23px;
-  }
-
-  h4 {
-    font-size: 20px;
-    margin: 10px 0px 0px 8px;
-  }
-
-  p {
-    font-size: 17px;
-    font-weight: normal;
-  }
-
+  /* search-filter */
   .form {
     margin: 30px 0px;
   }
-  /* ////////////////// */
+
+  .button-eco,
+  .button-family,
+  .button-love,
+  .button-pets {
+    margin: 0px 12px 15px 0px;
+    font-size: 12px;
+  }
+
+  .info-icone {
+    margin-left: -18px;
+  }
+
+  /* hebergements-et-populaires */
 
   .hebergements-et-populaires {
     flex-direction: column-reverse;
@@ -135,6 +156,11 @@
 
   #title-2 {
     margin-bottom: 30px;
+  }
+
+  #pop-stars {
+    margin-bottom: 15px;
+    font-size: 20px;
   }
 
   .pop-thumb {
@@ -190,6 +216,7 @@
     margin: 15px 35px;
     font-size: 20px;
   }
+  /* activity */
 
   .activity {
     margin: 30px 20px;
@@ -218,7 +245,7 @@
     height: 160px;
     width: 100%;
   }
-
+  /* footer */
   .end {
     flex-direction: column;
   }
