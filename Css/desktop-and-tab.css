@@ -1,0 +1,235 @@
+@media all and (min-width: 766px) and (max-width: 992px) {
+  .everything {
+    width: 766;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 14px;
+    margin-right: 0;
+  }
+
+  html {
+    overflow: auto;
+  }
+
+  .hebergements-et-populaires {
+    flex-wrap: wrap-reverse;
+    row-gap: 50px;
+    flex-direction: column-reverse;
+  }
+
+  .herbergements {
+    margin: auto;
+    width: 100%;
+  }
+
+  .populaires {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .pop-thumb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 15px;
+  }
+
+  .link-thumb-pop {
+    padding: 10px 10px 5px 0px;
+    width: 100%;
+  }
+
+  .activity-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow-x: scroll;
+
+    /* option1 nowwrap + overflow scroll +  */
+    /* option2 gap none + flow none +wrap reverse +  */
+    /* otptin3 display: grid: justify-content: none; overflow: scrol ; */
+  }
+
+  .footer-columns {
+    margin-left: 50px;
+  }
+}
+
+@media all and (max-width: 765px) {
+  .everything {
+    width: 100%;
+    margin: auto;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    margin: 0%;
+  }
+
+  .logo {
+    height: 70px;
+    margin-top: 5px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .navbar {
+    width: 100%;
+
+    border-bottom: solid 2px var(--grey-color);
+  }
+
+  .navLink {
+    padding: 15px 50px;
+    height: 0%;
+  }
+
+  .navLink:hover {
+    border-top: none;
+    border-bottom: 2px solid var(--blue-color);
+  }
+
+  h1,
+  h3 {
+    font-size: 23px;
+  }
+
+  h4 {
+    font-size: 20px;
+    margin: 10px 0px 0px 8px;
+  }
+
+  p {
+    font-size: 17px;
+    font-weight: normal;
+  }
+
+  .form {
+    margin: 30px 0px;
+  }
+  /* ////////////////// */
+
+  .hebergements-et-populaires {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0%;
+  }
+
+  .populaires {
+    width: 100%;
+    background-color: transparent;
+    padding: 15px;
+  }
+
+  #title-2 {
+    margin-bottom: 30px;
+  }
+
+  .pop-thumb {
+    margin: 0;
+  }
+
+  .thumb-card-pop {
+    width: 100%;
+    height: 155px;
+  }
+
+  .link-thumb-pop {
+    padding: 15px 0px 20px 0px;
+  }
+
+  .img-pop {
+    width: 145px;
+  }
+
+  #blue-white {
+    width: 190px;
+  }
+
+  .price-pop {
+    margin: 10px 8px;
+    font-weight: bold;
+  }
+
+  .herbergements {
+    width: 100%;
+    padding: 0;
+  }
+
+  .thumbnail-hebergements {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link-thumb {
+    width: 90%;
+  }
+
+  .img-heb {
+    height: 115px;
+  }
+
+  .price {
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .plus {
+    margin: 15px 35px;
+    font-size: 20px;
+  }
+
+  .activity {
+    margin: 30px 20px;
+  }
+
+  #title-3 {
+    margin-left: 10px;
+  }
+
+  .activity-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thumb-card-act {
+    width: 350px;
+  }
+
+  #vieuxPort,
+  #fort,
+  #frioul,
+  #parcNatio,
+  #notreDame,
+  #parcLong {
+    height: 160px;
+    width: 100%;
+  }
+
+  .end {
+    flex-direction: column;
+  }
+
+  .footer-columns {
+    width: 100%;
+  }
+
+  .footer-link {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}

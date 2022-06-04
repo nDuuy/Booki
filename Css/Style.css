@@ -1,0 +1,550 @@
+/* On applique box-sizing à tous les éléments */
+* {
+  box-sizing: border-box;
+}
+
+/*  communs à toute la page */
+:root {
+  --blue-color: #0065fc;
+  --light-blue-color: #deebff;
+  --grey-color: #f2f2f2;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: var(--blue-color);
+}
+
+.everything {
+  max-width: 992px;
+  margin: auto;
+}
+
+h1,
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 12px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 11px;
+  margin: 7px 0 0 9px;
+}
+
+h5 {
+  margin: 15px 10px;
+  font-size: 12px;
+}
+
+p {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+figure {
+  margin: 0;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100px;
+  margin: 0 34px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  min-width: 250px;
+}
+
+.navLink {
+  padding: 0 20px;
+  height: 92px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.navLink:hover {
+  border-top: 2px solid var(--blue-color);
+}
+
+.navLink:hover a {
+  color: var(--blue-color);
+}
+
+/* SEARCH */
+
+.search-filter {
+  margin: 40px 34px;
+}
+
+.sous-titre {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+}
+
+.logomap {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--grey-color);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.fas {
+  font-size: 15px;
+  color: var(--blue-color);
+}
+
+input {
+  width: 145px;
+  border: none;
+  border-top: 1px solid var(--grey-color);
+  border-bottom: 1px solid var(--grey-color);
+  font-size: 10px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.search {
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: var(--blue-color);
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  padding: 0 20px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.search:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.filterInfo {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.filter-button {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button-eco {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  background-color: white;
+  border: 2px solid var(--grey-color);
+  border-radius: 50px;
+  padding-right: 20px;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 10px;
+  cursor: pointer;
+}
+.button-family {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  background-color: white;
+  border: 2px solid var(--grey-color);
+  border-radius: 50px;
+  padding-right: 20px;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 10px;
+  cursor: pointer;
+}
+.button-love {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  background-color: white;
+  border: 2px solid var(--grey-color);
+  border-radius: 50px;
+  padding-right: 20px;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 10px;
+  cursor: pointer;
+}
+.button-pets {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  background-color: white;
+  border: 2px solid var(--grey-color);
+  border-radius: 50px;
+  padding-right: 20px;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.button-eco:hover {
+  background-color: var(--blue-color);
+  color: white;
+  border-color: var(--blue-color);
+}
+.button-family:hover {
+  background-color: var(--blue-color);
+  color: white;
+  border-color: var(--blue-color);
+}
+.button-love:hover {
+  background-color: var(--blue-color);
+  color: white;
+  border-color: var(--blue-color);
+}
+.button-pets:hover {
+  background-color: var(--blue-color);
+  color: white;
+  border-color: var(--blue-color);
+}
+
+.icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-blue-color);
+  height: 35px;
+  width: 35px;
+  border: 2px solid var(--light-blue-color);
+  border-radius: 35px;
+  margin-left: -12px;
+  margin-right: 15px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.info-icone {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--grey-color);
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  display: flex;
+}
+
+/*  HEBERGEMENTS & POPULAIRES*/
+
+.hebergements-et-populaires {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 15px;
+  justify-content: space-between;
+}
+
+.herbergements {
+  width: 67%;
+  border-radius: 25px;
+  background-color: var(--grey-color);
+  padding: 30px;
+  justify-content: space-between;
+}
+
+#title-1 {
+  margin-left: 5px;
+}
+
+.thumbnail-hebergements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.link-thumb {
+  width: 31%;
+}
+
+.thumb-card {
+  background-color: white;
+  padding: 5px;
+  border-radius: 17px;
+  margin-bottom: 17px;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
+}
+
+.thumb-card:hover {
+  transform: scale(1.1);
+}
+
+.img-heb {
+  width: 100%;
+  height: 85px;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  object-fit: cover;
+}
+
+.price {
+  font-size: 12px;
+  margin: 5px 10px;
+}
+
+.stars {
+  align-items: center;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.star--blue {
+  font-size: 9px;
+  color: var(--blue-color);
+}
+.star--grey {
+  font-size: 9px;
+  color: var(--grey-color);
+}
+
+.plus {
+  margin: 5px 9px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* populaires */
+
+.populaires {
+  width: 30%;
+  border-radius: 20px;
+  background-color: var(--grey-color);
+  padding: 30px;
+}
+
+.pop-title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#title-2 {
+  margin-left: 0px;
+}
+
+.price-pop {
+  margin: 5px 8px;
+}
+
+.pop-thumb {
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.thumb-card-pop {
+  background-color: white;
+  border-radius: 17px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 5px 10px 5px 5px;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
+  height: 100px;
+}
+
+.thumb-card-pop:hover {
+  transform: scale(1.1);
+}
+.img-pop {
+  height: 100%;
+  width: 90px;
+  border-top-left-radius: 11px;
+  border-bottom-left-radius: 11px;
+  object-fit: cover;
+}
+
+.pop-txt {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* ACTIVITES */
+
+.activity {
+  margin: 40px 34px;
+}
+
+#title-3 {
+  margin-left: 0px;
+}
+
+.thumb-card-act {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: white;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+}
+
+.thumb-card-act:hover {
+  transform: scale(1.1);
+}
+
+.img-act {
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+
+.activity-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  gap: 10px 20px;
+
+  grid-auto-flow: row;
+  justify-content: stretch;
+  justify-items: center;
+  grid-template-areas:
+    "vieux-port fort- parc-natio notre-dame"
+    "vieux-port fort- parc-natio parc"
+    "vieux-port frioul parc-natio parc";
+}
+
+.vieux-port {
+  grid-area: vieux-port;
+}
+
+.parc-natio {
+  grid-area: parc-natio;
+}
+
+.fort- {
+  grid-area: fort-;
+}
+
+.frioul {
+  grid-area: frioul;
+}
+
+.parc {
+  grid-area: parc;
+}
+
+.notre-dame {
+  grid-area: notre-dame;
+}
+
+#vieuxPort {
+  height: 290px;
+  width: 230px;
+}
+
+#fort {
+  height: 140px;
+  width: 220px;
+}
+
+#frioul {
+  height: 100px;
+  width: 220px;
+}
+
+#parcNatio {
+  height: 290px;
+  width: 230px;
+}
+
+#notreDame {
+  height: 100px;
+  width: 220px;
+}
+
+#parcLong {
+  height: 140px;
+  width: 220px;
+}
+
+.act-txt {
+  padding: 3px 0px 10px 5px;
+}
+
+/* footer */
+
+.end {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: var(--grey-color);
+  padding: 20px 34px;
+  margin-top: 50px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.footer-link {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
