@@ -44,14 +44,16 @@ h2 {
 }
 
 h3 {
-  font-size: 12px;
+  font-size: 15px;
   margin-right: 10px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 h4 {
-  font-size: 11px;
+  font-size: 14px;
   margin: 7px 0 0 9px;
+  font-weight: bold;
 }
 
 h5 {
@@ -75,7 +77,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  height: 100px;
   margin: 0 34px;
 }
 
@@ -109,12 +110,13 @@ header {
 /* SEARCH */
 
 .search-filter {
-  margin: 40px 34px;
+  margin: 40px 20px;
 }
 
-.sous-titre {
-  margin-top: 0;
+.sub-title {
+  margin-top: 5px;
   margin-bottom: 20px;
+  font-size: 12px;
 }
 
 .form {
@@ -138,13 +140,14 @@ header {
 }
 
 input {
-  width: 145px;
+  min-width: 170px;
   border: none;
   border-top: 1px solid var(--grey-color);
   border-bottom: 1px solid var(--grey-color);
   font-size: 10px;
   font-weight: bold;
   padding-left: 10px;
+  font-size: 15px;
 }
 
 .search {
@@ -153,12 +156,16 @@ input {
   border-bottom-right-radius: 10px;
   background-color: var(--blue-color);
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 25px;
   font-weight: bold;
   cursor: pointer;
   opacity: 0.9;
+}
+
+.search-logo {
+  visibility: hidden;
 }
 
 .search:hover {
@@ -166,13 +173,15 @@ input {
   transform: scale(1.05);
 }
 
+/* filter */
+
 .filterInfo {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .filter-button {
@@ -238,7 +247,7 @@ input {
 }
 
 .info-icone {
-  width: 45px;
+  width: 30px;
   height: 30px;
   border: 2px solid var(--grey-color);
   border-radius: 50%;
@@ -248,12 +257,16 @@ input {
   display: flex;
 }
 
+#filter-info {
+  font-size: 14px;
+}
+
 /*  HEBERGEMENTS & POPULAIRES*/
 
 .hebergements-et-populaires {
   display: flex;
   flex-direction: row;
-  margin: 50px 15px;
+  margin: 50px 10px;
   justify-content: space-between;
 }
 
@@ -261,12 +274,13 @@ input {
   width: 67%;
   border-radius: 25px;
   background-color: var(--grey-color);
-  padding: 30px;
+  padding: 20px;
   justify-content: space-between;
 }
 
 #title-1 {
-  margin-left: 5px;
+  margin: 10px 0px 10px 3px;
+  font-size: 18px;
 }
 
 .thumbnail-hebergements {
@@ -323,7 +337,7 @@ input {
 
 .plus {
   margin: 5px 9px;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: bold;
 }
 
@@ -333,7 +347,7 @@ input {
   width: 30%;
   border-radius: 20px;
   background-color: var(--grey-color);
-  padding: 30px;
+  padding: 30px 20px 30px 20px;
 }
 
 .pop-title {
@@ -344,7 +358,7 @@ input {
 }
 
 #title-2 {
-  margin-left: 0px;
+  font-size: 19px;
 }
 
 .price-pop {
@@ -354,7 +368,6 @@ input {
 .pop-thumb {
   display: flex;
   flex-direction: column;
-  margin-top: -10px;
   height: 100%;
   justify-content: space-around;
 }
@@ -367,7 +380,7 @@ input {
   flex-wrap: nowrap;
   padding: 5px 10px 5px 5px;
   box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
-  height: 100px;
+  height: 115px;
 }
 
 .thumb-card-pop:hover {
@@ -375,7 +388,7 @@ input {
 }
 .img-pop {
   height: 100%;
-  width: 90px;
+  width: 95px;
   border-top-left-radius: 11px;
   border-bottom-left-radius: 11px;
   object-fit: cover;
@@ -389,11 +402,12 @@ input {
 /* ACTIVITES */
 
 .activity {
-  margin: 40px 34px;
+  margin: 40px 25px;
 }
 
 #title-3 {
-  margin-left: 0px;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 .thumb-card-act {
@@ -421,12 +435,11 @@ input {
 .activity-card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* grid-template-rows: 1fr 1fr 1fr; */
-  gap: 10px 20px;
-
+  gap: 5px 20px;
   grid-auto-flow: row;
-  justify-content: stretch;
+  justify-content: center;
   justify-items: center;
+  align-items: center;
   grid-template-areas:
     "vieux-port fort- parc-natio notre-dame"
     "vieux-port fort- parc-natio parc"
@@ -435,56 +448,50 @@ input {
 
 .vieux-port {
   grid-area: vieux-port;
+  width: 100%;
 }
 
 .parc-natio {
   grid-area: parc-natio;
+  width: 100%;
 }
 
 .fort- {
   grid-area: fort-;
+  width: 100%;
 }
 
 .frioul {
   grid-area: frioul;
+  width: 100%;
 }
 
 .parc {
   grid-area: parc;
+  width: 100%;
 }
 
 .notre-dame {
   grid-area: notre-dame;
+  width: 100%;
 }
 
-#vieuxPort {
-  height: 290px;
-  width: 230px;
-}
-
-#fort {
-  height: 140px;
-  width: 220px;
-}
-
-#frioul {
-  height: 100px;
-  width: 220px;
-}
-
+#vieuxPort,
 #parcNatio {
   height: 290px;
-  width: 230px;
+  width: 100%;
 }
 
-#notreDame {
-  height: 100px;
-  width: 220px;
-}
-
+#fort,
 #parcLong {
   height: 140px;
-  width: 220px;
+  width: 100%;
+}
+
+#frioul,
+#notreDame {
+  height: 100px;
+  width: 100%;
 }
 
 .act-txt {
@@ -498,8 +505,8 @@ input {
   flex-direction: row;
   justify-content: flex-start;
   background-color: var(--grey-color);
-  padding: 20px 34px;
-  margin-top: 50px;
+  padding: 20px 30px;
+  margin-top: 40px;
 }
 
 .footer-columns {
@@ -509,6 +516,6 @@ input {
 }
 
 .footer-link {
-  font-size: 12px;
+  font-size: 13px;
   margin-bottom: 5px;
 }

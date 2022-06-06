@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
-    <!-- <link rel="stylesheet" href="./Css/Normalize.css" /> -->
+    <link rel="stylesheet" href="./Css/Normalize.css" />
     <link rel="stylesheet" href="./Css/Style.css" />
     <link
       rel="shortcut icon"
@@ -15,6 +15,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./Css/desktop-and-tab.css" />
+    <link rel="stylesheet" href="./Css/mobile.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,600;1,100&display=swap"
       rel="stylesheet"
@@ -44,15 +45,17 @@
         <!-- Section qui comprends le titre du site, le champs de recherche et les filtres de recherche -->
         <section class="search-filter">
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-          <p>En plein centre ville ou en pleine nature</p>
+          <p class="sub-title">En plein centre ville ou en pleine nature</p>
           <form action="/" class="form">
             <div class="logomap">
-              <i class="fas fa-map-marker-alt"></i>
+              <i class="fa-solid fa-location-dot"></i>
             </div>
-            <input type="search" placeholder="Marseille,France" />
+            <input type="search" placeholder="Marseille, France" />
             <button class="search" type="submit">
               <span class="search-txt">Rechercher</span>
-              <span class="search-logo"></span>
+              <span class="search-logo"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
             </button>
           </form>
 
@@ -118,7 +121,7 @@
                 <figure class="thumb-card">
                   <img
                     class="img-heb"
-                    src="./Assets/hebergements/hotel port.jpg"
+                    src="./Assets/hebergements/hotelport.jpg"
                     alt="Une chambre climatisée avec 2 lits simples"
                   />
                   <figcaption>
@@ -138,7 +141,7 @@
                 <figure class="thumb-card">
                   <img
                     class="img-heb"
-                    src="./Assets/hebergements/hotel mouettes.jpg"
+                    src="./Assets/hebergements/hotelmouettes.jpg"
                     alt="chambre avec un lit double et un petit dressing"
                   />
                   <figcaption>
@@ -158,7 +161,7 @@
                 <figure class="thumb-card">
                   <img
                     class="img-heb"
-                    src="./Assets/hebergements/hotel de la mer.jpg"
+                    src="./Assets/hebergements/hoteldelamer.jpg"
                     alt="chambre avec un lit double décorée sur le thème de la mer"
                   />
                   <figcaption>
@@ -178,7 +181,7 @@
                 <figure class="thumb-card">
                   <img
                     class="img-heb"
-                    src="./Assets/hebergements/auber le panier.jpg"
+                    src="./Assets/hebergements/auberlepanier.jpg"
                     alt="chambre avec 2 lits superposés en bois"
                   />
                   <figcaption>
@@ -198,7 +201,7 @@
                 <figure class="thumb-card">
                   <img
                     class="img-heb"
-                    src="./Assets/hebergements/chez amina.jpg"
+                    src="./Assets/hebergements/chezamina.jpg"
                     alt="chambre avec du parquet et 2 lits doubles"
                   />
                   <figcaption>
@@ -229,7 +232,7 @@
                 <figure class="thumb-card-pop">
                   <img
                     class="img-pop"
-                    src="./Assets/hebergements/hotel soleil.jpg"
+                    src="./Assets/hebergements/hotelsoleil.jpg"
                     alt="Une chambre verte avec un lit double"
                   />
                   <figcaption class="pop-txt">
@@ -249,7 +252,7 @@
                 <figure class="thumb-card-pop">
                   <img
                     class="img-pop"
-                    src="./Assets/hebergements/hotel hotes.jpg"
+                    src="./Assets/hebergements/hotelhotes.jpg"
                     alt="chambre avec un lit double et une mezzanine"
                   />
                   <figcaption class="pop-txt">
@@ -270,7 +273,7 @@
                   <img
                     class="img-pop"
                     id="blue-white"
-                    src="./Assets/hebergements/hotel bleu.jpg"
+                    src="./Assets/hebergements/hotelbleu.jpg"
                     alt="chambre blanche avec un lit double"
                   />
                   <figcaption class="pop-txt">
@@ -345,7 +348,7 @@
                   <img
                     class="img-act"
                     id="parcNatio"
-                    src="./Assets/activites/parc national.jpg"
+                    src="./Assets/activites/parcnational.jpg"
                     alt="Paysage de calanques"
                   />
                   <figcaption class="act-txt">
@@ -360,7 +363,7 @@
                   <img
                     class="img-act"
                     id="notreDame"
-                    src="./Assets/activites/notre dame.jpg"
+                    src="./Assets/activites/notredame.jpg"
                     alt="Notre-Dame-de-la-Garde"
                   />
                   <figcaption class="act-txt">
